@@ -1,0 +1,85 @@
+#search-container
+{
+  margin-top: 50px;
+}
+
+#search-tabs ul
+{
+  border-bottom: 2px solid #000;
+  margin: 0px;
+  min-width: 300px;
+  padding: 0px;
+  display: flex;
+}
+
+#search-tabs li
+{
+  background-color: #f3fcff;
+  border: 1px solid #00a0e6;
+  border-bottom: none;
+  border-radius: 5px 5px 0px 0px;
+  cursor: pointer;
+  font-weight: bold;
+  list-style-type: none;
+  margin-left: 5px;
+  padding: 10px 20px;
+}
+
+#search-tabs .tabSelected
+{
+  background-color: #fff;
+  border-bottom-color: #fff;
+  border-color: #000;
+  border-width: 2px;
+  cursor: default;
+  margin-bottom: -2px;
+}
+
+#search-tabs li:first-of-type
+{
+  margin-left: 10px;
+}
+
+#search-tabs a
+{
+  color: #034565;
+  text-decoration: none;
+}
+
+#search-tabs a:focus
+{
+  outline: none;
+}
+
+#search-tabs .tabSelected a
+{
+  color: #000;
+  cursor: default;
+}
+
+#search-tabs .tabSelected:hover,
+#search-tabs .tabSelected:focus
+{
+  background-color: #fff;
+  border-color: #000;
+}
+
+#search-tabs .tabSelected:hover a,
+#search-tabs .tabSelected:focus a
+{
+  color: #000;
+}
+
+#search-tabs li:hover,
+#search-tabs li:focus
+{
+  background-color: #fffae5;
+  border-color: #806600;
+  outline: none;
+}
+
+#search-tabs li:hover a,
+#search-tabs li:focus a
+{
+  color: #806600;
+}

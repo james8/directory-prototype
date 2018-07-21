@@ -1,0 +1,20 @@
+<div class="wrapper">
+  <div id="search-box">
+    <label for="search-categories">Search by...</label>
+    <select name="" id="search-categories">
+      <option value="person">Person</option>
+      <option value="office">Office</option>
+      <option value="district">District</option>
+      <option value="section">Section</option>
+      <option value="?">???</option>
+    </select>
+    <div>
+      <input id="search-query" type="text" placeholder="John Doe" />
+      <button type="button" (click)="Search();">Search</button>
+    </div>
+  </div>
+  <div id="search-results" *ngIf="showResults">
+    <span>Results for {{ category.toUpperCase() }}: "{{ query.toUpperCase() }}"</span>
+    <hr>
+  </div>
+</div>
