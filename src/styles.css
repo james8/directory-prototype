@@ -1,5 +1,11 @@
-label, select, input, button
+/* label, select, input, button
 {
   margin: 0px 10px 10px 0px;
+  padding: 5px;
+} */
+
+
+input
+{
   padding: 5px;
 }

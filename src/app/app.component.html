@@ -1,15 +1,13 @@
 <div id="search-container">
   <div id="search-tabs">
-    <ul>
-      <li *ngFor="let tab of tabs" tabindex="{{ tab.tabIndex }}"
-        [ngClass]="tab.selected ? 'tabSelected' : ''"
-        (click)="ChangeTab(tab.index);" (keyup.Space)="ChangeTab(tab.index);">
-        <a href="javascript:void(0)" tabindex="-1">{{ tab.title }}</a>
-      </li>
-    </ul>
+    <span *ngFor="let tab of tabs; let i = index" [class.tabPortal]="tab.portal" [class.tabHidden]="tab.admin !== portal">
+      <a *ngIf="tab.admin === portal" routerLink="{{ tab.route }}" tabIndex="{{ tab.tabIndex }}" [class.tabSelected]="tab.selected" (click)="ChangeTab(i);">
+        {{ tab.title }}
+      </a>
+    </span>
   </div>
+
   <div id="search-body">
-    <app-search *ngIf="tabs[0].selected"></app-search>
-    <app-frequently-called *ngIf="tabs[1].selected"></app-frequently-called>
+    <router-outlet></router-outlet>
   </div>
 </div>

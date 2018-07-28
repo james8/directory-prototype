@@ -13,8 +13,9 @@
       <button type="button" (click)="Search();">Search</button>
     </div>
   </div>
-  <div id="search-results" *ngIf="showResults">
+  <div id="search-results" *ngIf="searchResults.length > 0">
     <span>Results for {{ category.toUpperCase() }}: "{{ query.toUpperCase() }}"</span>
     <hr>
+    <app-search-result *ngFor="let searchResult of searchResults" [searchResult]="searchResult"></app-search-result>
   </div>
 </div>

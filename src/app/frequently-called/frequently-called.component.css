@@ -1,0 +1,31 @@
+#frequently-called
+{
+  margin: 0px auto;
+  max-width: 90%;
+  min-width: 565px;
+  width: 800px;
+}
+
+#frequently-called label,
+#frequently-called input
+{
+  margin: 0px;
+}
+
+#frequently-called .title
+{
+  font-size: 30px;
+  font-weight: bold;
+  padding: 35px 0px 20px 0px;
+  display: flex;
+  justify-content: center;
+}
+
+#frequently-called #search-box
+{
+  border-top: 4px double #01a0e6;
+  border-bottom: 4px double #01a0e6;
+  padding: 20px;
+  display: grid;
+  grid-template-columns: 60px auto;
+}

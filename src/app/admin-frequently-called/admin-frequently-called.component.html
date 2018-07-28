@@ -1,0 +1,32 @@
+<div class="wrapper">
+  <button type="button" id="add" (click)="CreateNew()">{{ addBtnTitle }}</button>
+
+  <table>
+    <tr>
+      <th></th>
+      <th>Title</th>
+      <th>Phone 1</th>
+      <th>Phone 2</th>
+      <th>Email</th>
+      <th>Site</th>
+      <th>Modified</th>
+    </tr>
+    <tr *ngFor="let data of frequentlyCalled">
+      <td>
+      <span id="edit">
+        Edit
+        <span class="hidden">'{{ data.Title }}'</span>
+      </span>
+      </td>
+      <td>{{ data.Title }}</td>
+      <td class="colPhone">{{ data.Phone }}</td>
+      <td class="colPhone">{{ data.Phone2 || "-" }}</td>
+      <td>{{ data.Email || "-" }}</td>
+      <td>{{ data.Site || "-" }}</td>
+      <td>{{ data.Modified }}</td>
+    </tr>
+  </table>
+
+  <div id="backdrop" *ngIf="showBackdrop"></div>
+  <app-frequently-called-add *ngIf="showAdd" (whenClose)="CloseForm();"></app-frequently-called-add>
+</div>

@@ -1,3 +1,12 @@
-<p>
-  frequently-called works!
-</p>
+<div id="frequently-called">
+  <label class="title">{{ title | uppercase }}</label>
+
+  <div id="search-box">
+    <label for="search">Search:</label>
+    <input type="text" id="frequently-called-filter" placeholder="enter search here..." (keyup)="FilterFrequentlyCalled()" />
+  </div>
+
+  <div>
+    <app-frequently-called-result *ngFor="let data of frequentlyCalled" [frequentlyCalledResult]="data"></app-frequently-called-result>
+  </div>
+</div>

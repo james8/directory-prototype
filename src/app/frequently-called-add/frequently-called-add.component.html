@@ -1,0 +1,48 @@
+<form #frequentlyCalledAddForm="ngForm" (ngSubmit)="OnSubmit(frequentlyCalledAddForm)">
+  <div class="header">{{ headerTitle }}</div>
+
+  <div class="formField">
+    <div>
+      <span class="label">Title</span>
+      <span class="description">Induit nabataeaque verba otia duris lanient subdita cetera congeriem septemque.</span>
+    </div>
+    <input type="text" id="title" placeholder="Frequently Called Office" />
+  </div>
+
+  <div class="formField">
+    <div>
+      <span class="label">Phone Number 1</span>
+      <span class="description">Induit nabataeaque verba otia duris lanient subdita cetera congeriem septemque.</span>
+    </div>
+    <input type="text" id="phone1" placeholder="(000) 000-0000" (keyup)="OnPhoneChange($event);" />
+  </div>
+
+  <div class="formField">
+    <div>
+      <span class="label">Phone Number 2</span>
+      <span class="description">Induit nabataeaque verba otia duris lanient subdita cetera congeriem septemque.</span>
+    </div>
+    <input type="text" id="phone2" placeholder="(111) 111-1111" (keyup)="OnPhoneChange($event);" />
+  </div>
+
+  <div class="formField">
+    <div>
+      <span class="label">Email</span>
+      <span class="description">Induit nabataeaque verba otia duris lanient subdita cetera congeriem septemque.</span>
+    </div>
+    <input type="text" id="email" placeholder="sample@sample.com" />
+  </div>
+
+  <div class="formField">
+    <div>
+      <span class="label">Site</span>
+      <span class="description">Induit nabataeaque verba otia duris lanient subdita cetera congeriem septemque.</span>
+    </div>
+    <input type="text" id="site" placeholder="http://hawaiipublicschools.org" />
+  </div>
+
+  <div class="footer">
+    <button type="button" (click)="OnClose();">Create frequently called</button>
+    <button type="button" (click)="OnClose();">Cancel</button>
+  </div>
+</form>

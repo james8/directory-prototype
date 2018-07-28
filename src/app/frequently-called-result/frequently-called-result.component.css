@@ -1,0 +1,46 @@
+#frequently-called-result
+{
+    border-bottom: 1px dotted #000;
+    padding: 20px;
+}
+
+#frequently-called-result label
+{
+    margin: 0px;
+    display: block;
+}
+
+#frequently-called-result .resultTitle
+{
+    font-size: 18px;
+    font-weight: bold;
+}
+
+#frequently-called-result .resultTitle label
+{
+    padding-bottom: 10px;
+}
+
+#frequently-called-result .resultData
+{
+    padding-left: 20px;
+    display: grid;
+    grid-template-columns: 100px auto;
+}
+
+#frequently-called-result .resultData div
+{
+    display: flex;
+    justify-content: flex-start;
+}
+
+#frequently-called-result .resultData:hover
+{
+    background-color: #e8c770;
+    border-radius: 5px;
+}
+
+#frequently-called-result .resultData:hover .dataSpacer
+{
+    border-top-color: #000;
+}

@@ -1,0 +1,26 @@
+<div id="frequently-called-result">
+    <div class="resultTitle">
+        <label>{{ frequentlyCalledResult.Title }}</label>
+    </div>
+
+    <div class="resultData">
+        <label>Phone</label>
+        <div>
+            <label>{{ frequentlyCalledResult.Phone }}</label>
+            <div *ngIf="frequentlyCalledResult.Phone2 !== undefined">
+                <label>/</label>
+                <label>{{ frequentlyCalledResult.Phone2 }}</label>
+            </div>
+        </div>
+    </div>
+
+    <div class="resultData" *ngIf="frequentlyCalledResult.Email !== undefined">
+        <label>Email</label>
+        <label>{{ frequentlyCalledResult.Email }}</label>
+    </div>
+
+    <div class="resultData" *ngIf="frequentlyCalledResult.Site !== undefined">
+        <label>Site</label>
+        <label>{{ frequentlyCalledResult.Site }}</label>
+    </div>
+</div>

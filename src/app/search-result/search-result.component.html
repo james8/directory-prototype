@@ -1,0 +1,20 @@
+<div id="search-result">
+  <div class="resultTitle">
+    <label>{{ searchResult.FirstName }} {{ searchResult.LastName }}</label>
+  </div>
+  <div class="resultData">
+    <label>Phone</label>
+    <div class="dataSpacer"></div>
+    <label>{{ searchResult.Phone }}</label>
+  </div>
+  <div class="resultData" *ngIf="searchResult.Fax !== undefined">
+    <label>Fax</label>
+    <div class="dataSpacer"></div>
+    <label>{{ searchResult.Fax }}</label>
+  </div>
+  <div class="resultData" *ngIf="searchResult.Cellular !== undefined">
+    <label>Cellular</label>
+    <div class="dataSpacer"></div>
+    <label>{{ searchResult.Cellular }}</label>
+  </div>
+</div>

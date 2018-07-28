@@ -1,0 +1,49 @@
+#search-result
+{
+    border-bottom: 1px dotted #000;
+    padding: 10px 20px;
+}
+
+#search-result .resultTitle
+{
+    font-size: 18px;
+    font-weight: bold;
+}
+
+#search-result .resultTitle label
+{
+    display: block;
+}
+
+#search-result .resultData
+{
+    border-radius: 5px;
+    max-width: 450px;
+    padding: 2px 15px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#search-result .resultData label
+{
+    margin: 0px;
+}
+
+#search-result .dataSpacer
+{
+    border-top: 1px dashed #595959;
+    margin: 0px 5px;
+    position: relative;
+    top: 15px;
+    flex: auto;
+}
+
+#search-result .resultData:hover
+{
+    background-color: #e8c770;
+}
+
+#search-result .resultData:hover .dataSpacer
+{
+    border-top-color: #000;
+}
